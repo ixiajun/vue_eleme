@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # eleme
 <<<<<<< HEAD
 
@@ -20,3 +21,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 =======
 Eleme app demo write by vue
 >>>>>>> 4b3fe5f48382ebdedaa0abb734c5f358396a21bc
+=======
+# vue_eleme
+Eleme app demo write by vue
+>>>>>>> 154e69f369d0c6907cdcd02f924360206274514e

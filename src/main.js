@@ -14,6 +14,9 @@ import goods from 'components/goods/goods'
 import ratings from 'components/ratings/ratings'
 import sellers from 'components/sellers/sellers'
 
+import './common/sass/icon.css'
+import './common/sass/base.css'
+
 const routes = [
   { path: '/goods', component: goods },
   { path: '/ratings', component: ratings },
