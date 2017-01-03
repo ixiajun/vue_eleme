@@ -1,4 +1,5 @@
 # eleme
+<<<<<<< HEAD
 
 > A Vue.js project
 
@@ -16,3 +17,6 @@ npm run build
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+Eleme app demo write by vue
+>>>>>>> 4b3fe5f48382ebdedaa0abb734c5f358396a21bc

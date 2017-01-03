@@ -1,5 +1,12 @@
 <template lang="html">
-<div class="header">我是header</div>
+<div class="header">
+  <div class="content-wrapper">
+    <div class="avatar">
+      <!-- <img :src="seller.avatar" width="64" height="64" alt=""> -->
+    </div>
+  </div>
+  <div class="bulletin-wrapper"></div>
+</div>
 </template>
 
 <script>
@@ -9,7 +16,7 @@ export default {
   },
   prop:{
     seller:{
-      type:0
+      type:Object
     }
   },
   computed: {},
