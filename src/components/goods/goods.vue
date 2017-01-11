@@ -11,10 +11,10 @@
     </div>
     <div class="foods-wrapper" ref="foodWrapper">
       <ul>
-        <li @click="selectFood(food,$event)" v-for="item in goods" class="food-list food-list-hook">
+        <li v-for="item in goods" class="food-list food-list-hook">
           <h1 class="title">{{ item.name }}</h1>
           <ul>
-            <li class="food-item" v-for="food in item.foods">
+            <li class="food-item" @click="selectFood(food,$event)" v-for="food in item.foods">
               <div class="icon">
                 <img width="57" height="57" :src="food.icon" alt="">
               </div>
@@ -55,7 +55,8 @@ export default {
       goods: [],
       listHeight: [],
       scrollY: 0,
-      selectedFood: {}
+      selectedFood: {},
+      food:{}
     }
   },
   created() {
@@ -137,7 +138,8 @@ export default {
       if(!event._constructed) {
         return;
       }
-      // this.$refs.child.$emit('food');
+      this.selectedFood = food;
+      this.$refs.food.show();
     }
   },
   components: {

@@ -358,11 +358,17 @@ export default {
     .shopcart-list {
       position: absolute;
       left: 0;
-      top: -258px;
+      top: 0;
       z-index: -1;
       width: 100%;
-
-
+      transform: translate3d(0,-100%,0);
+      &.fold-enter-active, &.fold-leave-active {
+      transition: all 0.5s;
+      transform:translate3d(0, -100%, 0);
+      }
+      &.fold-enter, &.fold-leave-active {
+        transform:translate3d(0, 0, 0);
+      }
       .list-header {
         height: 40px;
         line-height: 40px;
@@ -383,7 +389,7 @@ export default {
       .list-content {
         color: #000;
         padding: 0 18px;
-        min-height: 217px;
+        max-height: 217px;
         overflow: hidden;
         background-color: #fff;
         .food {
@@ -430,28 +436,28 @@ export default {
       }
     }
   }
-  .fold-enter-active {
-  animation-name: fold-in;
-  animation-duration: .5s;
-  }
-  .fold-leave-active {
-    animation-name: fold-out;
-    animation-duration: 0.5s;
-  }
-  @keyframes fold-in {
-    0% {
-      transform: translate3d(0, 100%, 0);
-    }
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  @keyframes fold-out {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(0, 100%, 0);
-    }
-  }
+  // .fold-enter-active {
+  // animation-name: fold-in;
+  // animation-duration: .5s;
+  // }
+  // .fold-leave-active {
+  //   animation-name: fold-out;
+  //   animation-duration: 0.5s;
+  // }
+  // @keyframes fold-in {
+  //   0% {
+  //     transform: translate3d(0, 100%, 0);
+  //   }
+  //   100% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  // }
+  // @keyframes fold-out {
+  //   0% {
+  //     transform: translate3d(0, 0, 0);
+  //   }
+  //   100% {
+  //     transform: translate3d(0, 100%, 0);
+  //   }
+  // }
 </style>
